@@ -1,0 +1,10 @@
+.wrapPhoto{
+    min-height: 700px;
+    background: #eee;
+    margin-top: 50px;
+}
+@media (min-width:900px){
+    .wrapPhoto{
+        width: 70%;
+    }
+}

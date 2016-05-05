@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="js/click.js"></script>
+</head>
+<body>
+    <script>
+        $(window).ready(function(){
+            var count_img = $('img').length,
+                data = new Date(),
+                p1 = document.createElement('p'),
+                p2 = document.createElement('p'),
+                dy=data.getDate(),
+                mth=data.getMonth()+1,
+                yr=data.getFullYear(),
+                hs=data.getHours(),
+                min=data.getMinutes(),
+ inner=document.getElementById('onefour').parentNode;
+            if(dy<10)dy='0'+dy;
+            if(mth<10)mth='0'+mth;
+            if(hs<10)hs='0'+hs;
+            if(min<10)min='0'+min;
+            var curentData=dy+'.'+mth+'.'+yr+' '+hs+':'+min;
+            p1.innerHTML='Текущая дата: '+curentData;
+            p2.innerHTML='Количество картинок: '+count_img;
+            inner.insertBefore(p1,inner.firstChild);
+            inner.insertBefore(p2,inner.firstChild);
+        });
+    </script>
+        <div class="onefour" id="onefour">
+            <div class="img_b">
+                <img src="img/1.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/2.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/3.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/4.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/5.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/6.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/7.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/8.jpg">
+                <div class="delete" onclick="">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/9.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/10.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/11.jpg">
+                <div class="delete">×</div>
+            </div>
+            <div class="img_b">
+                <img src="img/12.jpg">
+                <div class="delete">×</div>
+            </div>
+        </div>
+    <div class="input">Востановить</div>
+    <script type="text/javascript">
+        $('.delete').click(function (){
+            var atr = $(this).parent().children().attr('src');
+            localStorage.setItem(atr, 'remote');
+            $(this).parent().remove();
+        });
+        $('.input').click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+            $('.remote').remove();
+    </script>
+        <script type="text/javascript" src="js/locstr.js"></script>
+</body>
+</html>

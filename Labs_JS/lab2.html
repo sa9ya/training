@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML>
+	<html> 
+<head>
+    <meta charset="utf-8">
+<title> площадь треугольника </title>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+var nodes = document.querySelectorAll('#x,#y');
+[].forEach.call(nodes, function(item, i) {
+        item.addEventListener('blur', function() {
+            var val = this.value;
+            item.value = nodes[+!i].value
+            nodes[+!i].value = val;
+        });
+    });   });   
+
+
+function care (obj) 
+{
+var x=obj.ax.value;
+var y=obj.ay.value;
+var x1=obj.bx.value;
+var y1=obj.by.value;
+var x2=obj.zx.value;
+var y2=obj.zy.value;
+var t= Math.pow((Math.pow((x-x1),2)+Math.pow((y-y1),2)),(0.5));
+var z= Math.pow((Math.pow((x1-x2),2)+Math.pow((y1-y2),2)),(0.5));
+var i= Math.pow((Math.pow((x-x2),2)+Math.pow((y-y2),2)),(0.5));
+var p= (t+z+i)/2;
+var s= Math.pow(p*(p-t)*(p-z)*(p-i),(0.5))
+document.write ("Площадь треугольника равна ",s);
+}
+
+</script> 
+</head> 
+<body>
+<form name="forml">
+ x1=<input type="text" size=7 name="ax">
+ y1=<input type="text" size=7 name="ay"><br><br>
+ x2=<input type="text" size=7 name="bx">
+ y2=<input type="text" size=7 name="by"><br><br>
+ x3=<input type="text" size=7 name="zx">
+ y3=<input type="text" size=7 name="zy"><br><br>
+ <input type="button" value=Вычислить onClick="care(document.forms.forml)"><hr>
+</form> 
+    <form name="form1">
+            <p> Введите координаты точки по оси х: <input type="text" size="4" id="x1"> </p>
+            <p> Введите координаты точки по оси y: <input type="text" size="4" id="y1"> </p>
+Расстояние  <input type="text" width="50" id="res" value="выделите текст"><p id="demo"></p>
+        </form><br>
+    <input type="text" id="x"  >
+    <input type="text" id="y"  >
+<script>
+document.getElementById("res").onselect = function() {myFunction()};
+function myFunction() {
+    var x1= document.getElementById("x1").value;
+    var y1= document.getElementById("y1").value;
+    document.getElementById("demo").innerHTML = "You selected some text!", Math.sqrt(Math.pow(x1,2)+Math.pow(y1,2));
+}
+</script>
+</body> 
+</html>

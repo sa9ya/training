@@ -1,0 +1,423 @@
+@font-face{
+    font-family: Bellerose;
+    src: url(../fontFamily/Bellerose.ttf);
+   }
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+html, body{
+
+    height: 100%;
+}
+strong{
+    font-weight: normal;
+}
+p{
+    color: white;
+}
+header h2, header h1{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Arial;
+    letter-spacing: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background: #000;
+}
+
+/* Шапка сайта*/
+
+
+header{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    text-transform: uppercase;
+}
+.JokersMainPage{
+    font-size: 5em;
+    font-family: Bellerose;
+    margin-top: -60px;
+}
+#starMainPage1{
+    align-content: center;
+    margin-right: 20px;
+}
+#starMainPage2{
+    align-content: center;
+    margin-left: 20px;
+}
+.backgroundHeader{
+    background: url(../image/MainPage.jpg) no-repeat center fixed;
+    width: 100%;
+    background-size:cover;
+}
+.arrowADown{
+    background: white;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin-top: 10%;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+.arrowADown:hover{
+    opacity: inherit;
+}
+
+/* M E N U */
+
+#h_menu.default {
+    width:100%;
+}
+#h_menu.fixed {
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+}
+
+#h_menu{background: #000; position: relative;}
+.inline{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inline_menu{width: 80%;height: 100%;}
+.inline_icons{width: 19%;height: 100%;}
+.inline_icons a:nth-child(2) img{margin: 0 10px;}
+.navigation  li{
+    color: white;
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 1.3em;
+    position: relative;
+}
+ul>hr{
+    margin: 1px auto 0;
+    border: none;
+    height: 1px;
+    width: 70%;
+    background-color: #fff;
+}
+.navigation li:hover{background: #333;}
+.navigation > li > .dropdown{
+    position: absolute;
+    top: 100%;
+    display: none;
+    background: #000;
+    width: 100%;
+    left: 0;
+}
+.navigation > li > .dropdown li{
+    width: 70%;
+    font-size: 1em;
+    padding: 15%;
+}
+.dropdown li:hover{
+    background: #333;
+}
+.navigation > li:hover > .dropdown{
+    display: block;
+    z-index: 1000;
+}
+.MenuIcons{
+    text-align: center;
+}
+.MenuIcons img{
+    height: 30px;
+    width: 35px;
+    opacity: 0.7;
+}
+.MenuIcons img:hover{
+    opacity: inherit;
+}
+
+/*    A B O U T    */
+
+
+.aboutTeam{
+    background-color: #EBEDF3;
+    width: 100%;
+}
+#displayinline{
+    min-height: 240px;
+    padding: 10px;
+    vertical-align: top;
+    width: 20%;
+    margin: 1% 0;
+    display: inline-block;
+}
+.aboutTeamWhoWeAre{
+    text-align: center;
+    padding: 20px;
+    
+}
+.aboutTeamWhoWeAre h2{
+    color: #FA0;
+    font-size: 3em;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.aboutTeamParagraph{
+    text-align: center;
+    padding: 0;
+}
+.aboutTeamParagraph p{
+    font-size: 1.5em;
+    color: #fa0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.iconTeam{
+    width: 40%;
+    padding: 1px;
+    border: 3px solid #000;
+    border-radius: 100%;
+}
+
+/*Тренерський склад*/
+
+
+.TrainersTeam{
+    width: 100%;
+    background: #151515;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+.TrainerPosition{
+    margin-bottom: 2%;
+}
+.chapter{
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2em;
+}
+.TrainersImage{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+.trener{
+    padding: 2%;
+    display: table;
+    width: 76%;
+}
+.ImageWrapper{
+    width: 20%;
+    display: table-cell;
+    padding: 10px;
+    background: #1f1f1f;
+    border-radius: 50px;;
+}
+.text{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.4em;
+    width: 50%;
+    display: table-cell;
+    padding: 3%;
+    vertical-align: top;
+    background: #1f1f1f;
+    border-radius: 50px;
+    
+}
+.TrainersName{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.8em;
+    margin-bottom: 1%;
+    letter-spacing: 5px;
+}
+.TrainerPosition{
+    font-size: 1.5em;
+}
+
+/* Why We */
+
+.WhyWe{
+    padding: 3%;
+    background-color: #EBEDF3;
+    text-align: center;
+}
+.WhyWe h3{
+    margin: 0 auto 1%;
+    font-size: 2.5em;
+    margin-bottom: 3%;
+}
+.WhyWe ul li{
+    text-align: left;
+    list-style-type: none;
+    padding: 0 0 0 50px;
+    font-size: 1.5em;
+    color: #000;
+    width: calc(100% - 50px);
+    margin: 20px;
+}
+.WhyWe ul{
+    display: table-cell;
+    margin: 0 0 0 50px;
+    width: calc(50% - 50px);
+}
+.center{
+    text-align: center;
+}
+.WhyWe li.one{
+background: url(../image/calendar70px.png) no-repeat left;}
+.WhyWe li.two{
+background: url(../image/Gym.png) no-repeat left;}
+.WhyWe li.three{
+background: url(../image/mute-glyph.png) no-repeat left;}
+.WhyWe li.four{
+background: url(../image/label_black_new.png) no-repeat left;}
+.WhyWe li.five{
+background: url(../image/thumb-up.png) no-repeat left;}
+.WhyWe li.six{
+background: url(../image/flat_world_cup.png) no-repeat left;}
+
+
+/* Contacts */
+
+.contactsUs{
+    background: url(../image/twofootballers.jpg) no-repeat fixed center;
+    background-size:cover;
+    padding: 3%;
+}
+.contactsUs .ContactsChapter{
+    text-align: center;
+    font-size: 2.2em;
+    color: #EBEDF3;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.contactsUs form{
+    text-align: center;
+}
+.form{
+    margin: 2% auto;
+    width: 40%;
+}
+.form form .inputArea{
+    width: 46%;
+    padding: 1% 1%;
+    font-size: 1.5em;
+    margin: 5% 0;
+}
+.form form textarea{
+    padding: 10px;
+    resize: none;
+    width: 94%;
+    font-size: 1.5em;
+}
+.Submit{
+    margin-top: 3%;
+    padding: 2% 2%;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+/* FOTER */
+
+footer{
+    min-height: 5%;
+    margin-bottom: 21px;
+    background: #111;
+}
+.fot{
+    display: inline-block;
+    width: 31%;
+    vertical-align: middle;
+    padding: 1% 0 1% 1%;
+}
+footer h4{
+    color: #efefef;
+}
+footer h4 a{
+    text-decoration: underline;
+}
+footer h4 a:hover{
+    color: #44f;
+}
+footer p{
+}
+footer .d3 img{
+    width: 10%;
+    margin-left: 5%;
+    opacity: 0.6;
+}
+footer .d3 img:hover{
+    opacity: inherit;
+}
+
+footer .d3{text-align: right;padding-right: 3%;}
+@media (min-width:500px){
+    .wrapper{
+        width: 70%;
+}
+    .strike {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap; 
+}
+    .strike > span {
+        position: relative; 
+        display: inline-block;
+}
+
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        height: 2px;
+        border-top: 2px double white;
+        border-bottom: 2px double white;
+}
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+}
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+}
+    }
+@media (max-width:1100px){
+    #displayinline{
+        width: 40%;
+    }
+}
+@media (max-width:600px){
+    #displayinline{
+        width: 90%;
+    }
+}
+@media (max-width:1000px){
+    .MenuIcons{
+        display: none;
+    }
+    .inline_menu{width: 100%;}
+    .inline_icons{width: 0;}
+}
+@media (max-height:768px){
+.backgroundHeader{
+    height: 705px;
+}
+}
+@media (min-height:769px){
+.backgroundHeader{
+    height: 1000px;
+}
+}
+@media (max-width:700px){
+    .wrapper{
+        width: 100%;
+}
+}

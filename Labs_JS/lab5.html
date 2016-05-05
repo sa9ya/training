@@ -1,0 +1,38 @@
+  <html>
+  <head>
+      <meta charset="utf-8">
+  <title>Lab 5</title>
+      <style>
+          hr{margin-top: 10px;}
+      </style>
+      <script>
+        <!--
+            function Horizontal_line(width, height, position){
+            var width_hr = width;
+            var height_hr = height;
+            var position_hr = position;
+            document.getElementsByTagName('hr').animate({
+            width: width_hr;
+            height: height_hr;
+            position: position_hr;
+            });
+        }
+            -->
+      </script>
+      </head>
+  <body>
+      <form name="form1">
+      Задайте ширину линии:
+      <input type="text" name="width"><br>
+      <br>
+      Задайте толщину линии:
+      <input type="text" name="height"><br><br>
+      Задайте расположение линии:<br>
+      По центру: <input type="radio" name="position" value="center"><br>
+      Справа: <input type="radio" name="position" value="right"><br>
+     Слева: <input type="radio" name="position" value="left"><br>
+          <input type="submit" onsubmit="Horizontal_line(form1)">
+      </form>
+      <hr>
+  </body>
+  </html>

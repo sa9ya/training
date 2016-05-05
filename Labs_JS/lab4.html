@@ -1,0 +1,64 @@
+<HTML>
+    <meta charset="utf-8">
+    <script src="../NEWSITE/js/jquery-2.1.3.js"></script>
+    <TITLE>Перестановка изображений</TITLE>
+    <style>
+        .arrow{width: 40px; position: absolute; visibility: hidden;}
+        .down1{left: 530px; top: 50px;}
+        .down2{left: 610px; top: 50px;}
+        .down3{left: 720px; top: 50px;}
+        .down4{left: 825px; top: 50px;}
+        header{margin-top: 100px;}
+        .image{margin-top: 20px;}
+        li{
+            display: inline;
+            padding: 19px;
+        }
+        li:hover{
+            background: red;
+            color: blue;
+        }
+    </style>
+ <script>
+        function chan()
+        {
+            var arr =[];
+            var result = document.getElementById('result');
+            for (var i = 0; i < document.getElementsByTagName('img').length - 1; i++) {
+                var img = document.getElementsByTagName('img')[i];
+
+                arr.push(img.src);
+
+            }
+            result.src = arr[Math.floor(Math.random()*arr.length)];
+
+        }
+    </script>
+</HEAD>
+<BODY>
+<CENTER>
+    <header>
+        <ul>
+            <li>Main</li>
+            <li>About</li>
+            <li>Our sponsors</li>
+            <li>Galerry</li>
+        </ul>
+    </header>
+    <IMG src="img/1.jpg" width="100px" name="pic1" title="1" class="image">
+    <IMG src="img/2.jpg" width="100px" name="pic2" title="2" class="image">
+    <IMG src="img/3.jpg" width="100px" name="pic3" title="3" class="image"> <br><br >
+
+    <input type="button" value="Chose image" onClick="chan(this)">
+    <br>
+        <br>
+    <IMG id="result" src="">
+</CENTER>
+        <script>
+        $('.image').width(100).hover(function(){
+        $(this).stop().animate({width: 150});
+    }, function(){
+        $(this).stop().animate({width: 100});
+    });</script>
+</BODY>
+</HTML>

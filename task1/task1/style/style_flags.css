@@ -1,0 +1,101 @@
+body{
+    background-color: blanchedalmond;
+}
+.flag{
+	width:300px;
+	height: 200px;
+	margin: 10px auto;
+}
+    /* U K R A I N E */
+.ukraine .yellow{
+	background-color: #005BBB;
+	width:100%;
+	height:50%;
+}
+.ukraine .blue{
+	background-color: #FFD500;
+	width:100%;
+	height:50%;
+}
+    /* J A P A N */
+.japan{
+    background: #fff;
+    position: relative;
+}
+.japan .red{
+    height: 100px;
+    width: 100px;
+    background: #BC002D;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+    /* I C E L A N D */
+.iceland{
+    background: #D72828;
+    position: relative;
+    z-index: 1;
+}
+.iceland div{
+    background: #fff;
+    z-index: 2;
+    position: absolute;
+}
+.white div{
+    background: #003897;
+    z-index: 3;
+    position: absolute;
+}
+.iceland>.l_t, .iceland>.l_b{
+    width: 90px;
+    height: 90px;
+}
+.iceland>.l_b{
+    bottom: 0;
+}
+.iceland>.r_t, .iceland>.r_b{
+    width: 190px;
+    height: 90px;
+    right: 0;
+}
+.iceland>.r_b{
+    bottom: 0;
+}
+.white>.l_t, .white>.l_b{
+    width: 80px;
+    height: 80px;
+}
+.white>.l_b{
+    bottom: 0;
+}
+.white>.r_t, .white>.r_b{
+    width: 180px;
+    height: 80px;
+    right: 0;
+}
+.white>.r_b{
+    bottom: 0;
+}
+    /* C Z E C H */
+.czech{
+    position: relative;
+}
+.czech .white, .czech .red{
+    width: 100%;
+    height: 50%;
+}
+.czech .white{
+    background: #fff;
+}
+.czech .red{
+    background: #D7141A;
+}
+.czech .blue{
+    position: absolute;
+    border-top: 100px solid transparent;
+	border-left: 140px solid #11457E;
+	border-bottom: 100px solid transparent;
+    top: 0;
+    left: 0;
+}

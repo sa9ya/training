@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.dar{
+    background: #9A59B5;
+    width: 450px;
+    margin: 10% auto;
+    border: 2px solid #fff;
+    padding: 0 10px 10px;
+}
+.asd{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    min-height:100%;
+    background: rgba(0,0,0,0.7);
+}
+span{
+    color: #fff;
+    font-size: 20px;
+}
+hr{
+    margin: 0 auto 10px;
+}
+table{
+    width: 100%;
+}
+label{
+    color: #fff;
+    margin-right: 25px;
+}
+.post{
+    text-align: center;
+}
+tr td{
+    text-align: right;
+    width: 110px;
+}
+td input{
+    width: calc(100% - 15px);
+}
+input{
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+}
+.canc, .save{
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+}
+.save{
+    background: #4E92CF;
+}
+.btn_lft{
+    padding-top: 10px;
+    text-align: right;
+}

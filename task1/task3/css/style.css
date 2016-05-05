@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.onefour{
+    margin: 10px auto;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+@media (min-width:900px){
+    .img_b{
+        width: calc(25% - 5px);
+    }
+    .img_b:nth-child(4n+1) img{
+    border: 5px solid red;
+}
+}
+@media (min-width:500px) and (max-width:899px){
+    .img_b{
+        width: calc(50% - 5px);
+    }
+    .img_b:nth-child(2n+1) img{
+    border: 5px solid red;
+}
+}
+@media (max-width:499px){
+    .img_b{
+        width: 100%;
+    }
+    .img_b:nth-child(1n) img{
+    border: 5px solid red;
+}
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+.img_b{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px 0 15px 0;
+}
+.img_b img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 5px solid gray;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+     -o-transition: 1s;
+     transition: 1s;
+    vertical-align: middle;
+}
+.img_b img:hover{
+    border-color: yellow;
+    -webkit-transform: rotate3d(0,0,1,45deg);
+    -moz-transform: rotate3d(0,0,1,45deg);
+    -o-transform: rotate3d(0,0,1,45deg);
+    transform: rotate3d(0,0,1,45deg);
+}
+.zoom {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+    margin: auto;
+	display:none;
+	text-align:center;
+    vertical-align: middle;
+}
+.zoom_bg {
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+.hide{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    cursor: pointer;
+    z-index:100;
+    font: 40px/1 Arial;
+    color: red;
+}
+.zoom_img {
+	position: relative;
+	margin: auto;
+	z-index:2;
+	max-width:calc(100% - 20px);
+    max-height: 100%;
+    border: 10px white solid;
+    border-radius: 20px;
+}
+.close{
+    width: 100px;
+    height: 100;
+    font-size: 50px;
+    color: red;
+    background: white;
+    top: 0;
+}
+.input{
+    width: 100px;
+    height: 25px;
+    border: none;
+    background: #1f1;
+    margin: 40px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 900;
+}
+.input:hover{
+    background: #5f5;
+}
+.input:active{
+    background: #9f9;
+}
+.delete{
+    background: #f00;
+    font: 40px/1 Arial;
+    border-radius: 10px;
+    width: 50%;
+    margin: 5px auto 0;
+    cursor: pointer;
+}
+.remote{
+    display: none;
+}
